@@ -1,0 +1,39 @@
+name: بناء تطبيق Android
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: إعداد JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: gradle
+
+    - name: منح صلاحيات التنفيذ لـ gradlew
+      run: chmod +x gradlew
+      
+    - name: بناء مع Gradle
+      run: ./gradlew build
+      
+    - name: تشغيل الاختبارات
+      run: ./gradlew test
+      
+    - name: إنشاء ملف APK
+      run: ./gradlew assembleDebug
+      
+    - name: حفظ ملف APK كنتيجة
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-debug
+        path: app/build/outputs/apk/debug/app-debug.apk
