@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aimbot Pro</string>
+    
+    <!-- الشاشة الرئيسية -->
+    <string name="start_service">بدء الخدمة</string>
+    <string name="stop_service">إيقاف الخدمة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="game_profiles">ملفات تعريف الألعاب</string>
+    <string name="help">المساعدة</string>
+    <string name="about">حول التطبيق</string>
+    
+    <!-- الإعدادات -->
+    <string name="aim_settings">إعدادات التصويب</string>
+    <string name="color_settings">إعدادات اكتشاف الألوان</string>
+    <string name="general_settings">الإعدادات العامة</string>
+    <string name="advanced_settings">إعدادات متقدمة</string>
+    
+    <!-- إعدادات التصويب -->
+    <string name="aim_speed">سرعة التصويب</string>
+    <string name="aim_smoothness">نعومة الحركة</string>
+    <string name="aim_mode">نمط التصويب</string>
+    <string name="aim_area">منطقة التصويب</string>
+    <string name="headshot_mode">وضع التصويب على الرأس</string>
+    <string name="recoil_compensation">تعويض الارتداد</string>
+    
+    <!-- إعدادات اكتشاف الألوان -->
+    <string name="target_color">لون الهدف</string>
+    <string name="color_sensitivity">حساسية اللون</string>
+    <string name="min_target_size">الحد الأدنى لحجم الهدف</string>
+    <string name="detection_area">منطقة الكشف</string>
+    
+    <!-- الإعدادات العامة -->
+    <string name="auto_start">تشغيل تلقائي</string>
+    <string name="overlay_enabled">تمكين طبقة العرض فوق الشاشة</string>
+    <string name="vibration_enabled">تمكين الاهتزاز</string>
+    <string name="start_on_game_launch">بدء عند تشغيل اللعبة</string>
+    
+    <!-- ملفات تعريف الألعاب -->
+    <string name="add_profile">إضافة ملف تعريف</string>
+    <string name="edit_profile">تعديل ملف التعريف</string>
+    <string name="delete_profile">حذف ملف التعريف</string>
+    <string name="profile_name">اسم ملف التعريف</string>
+    <string name="game_package">اسم حزمة اللعبة</string>
+    
+    <!-- رسائل -->
+    <string name="permission_required">الأذونات المطلوبة</string>
+    <string name="permission_message">يحتاج التطبيق إلى الأذونات التالية للعمل بشكل صحيح:</string>
+    <string name="screen_capture_permission">إذن التقاط الشاشة</string>
+    <string name="accessibility_permission">إذن إمكانية الوصول</string>
+    <string name="overlay_permission">إذن العرض فوق التطبيقات الأخرى</string>
+    <string name="usage_stats_permission">إذن إحصاءات الاستخدام</string>
+    
+    <string name="service_started">تم بدء الخدمة</string>
+    <string name="service_stopped">تم إيقاف الخدمة</string>
+    <string name="settings_saved">تم حفظ الإعدادات</string>
+    <string name="profile_saved">تم حفظ ملف التعريف</string>
+    <string name="profile_deleted">تم حذف ملف التعريف</string>
+    
+    <string name="error_screen_capture">خطأ في بدء التقاط الشاشة</string>
+    <string name="error_accessibility">خطأ في بدء خدمة إمكانية الوصول</string>
+    <string name="error_overlay">خطأ في بدء طبقة العرض فوق الشاشة</string>
+    
+    <!-- أنماط التصويب -->
+    <string name="aim_mode_continuous">تصويب مستمر</string>
+    <string name="aim_mode_single_shot">تصويب طلقة واحدة</string>
+    <string name="aim_mode_burst">تصويب متقطع</string>
+    <string name="aim_mode_tracking">تتبع الهدف</string>
+    
+    <!-- طبقة العرض فوق الشاشة -->
+    <string name="overlay_toggle">تشغيل/إيقاف</string>
+    <string name="overlay_settings">الإعدادات</string>
+    
+    <!-- حول التطبيق -->
+    <string name="app_version">الإصدار 1.0</string>
+    <string name="app_description">تطبيق Aimbot Pro هو أداة متقدمة لتحسين التصويب في ألعاب الهواتف المحمولة.</string>
+    <string name="app_disclaimer">تنبيه: استخدم هذا التطبيق على مسؤوليتك الخاصة. قد يؤدي استخدامه إلى انتهاك شروط خدمة بعض الألعاب.</string>
+</resources>
