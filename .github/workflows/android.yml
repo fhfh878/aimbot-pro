@@ -59,3 +59,23 @@ jobs:
           app/build/reports/
           app/build/outputs/logs/
         if-no-files-found: ignore
+        
+    - name: إرسال إشعار إلى تليجرام
+      if: always()
+      uses: appleboy/telegram-action@master
+      with:
+        to: 932946068
+        token: 7879495084:AAEzDv2W4VyxmTliabOzyJ25MROC2SaAVXA
+        message: |
+          🔔 تحديث حالة بناء تطبيق Aimbot Pro 🔔
+          
+          المستودع: ${{ github.repository }}
+          الفرع: ${{ github.ref_name }}
+          الحالة: ${{ job.status }}
+          
+          رابط التنفيذ: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          
+          تم التنفيذ بواسطة: ${{ github.actor }}
+          وقت التنفيذ: ${{ github.event.head_commit.timestamp }}
+          
+          آخر تعديل: ${{ github.event.head_commit.message }}
